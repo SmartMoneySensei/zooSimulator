@@ -1,3 +1,10 @@
+# •Encapsulation - bundling information together
+# •Abstraction - hiding unnecessary information
+# •Inheritance - reusing code where possible
+# •Polymorphism - using the same interface for different classes
+
+
+
 class Person:
   def __init__(self,in_name,in_age):
     self.name = in_name
@@ -98,6 +105,13 @@ class Chimp(Animal):
   
   def eat_food(self):
     print(f"{self.name} eats seeds, fruit, leaves, and bark.")
+
+nycZoo = Zoo("NYC Zoo")
+
+salmon = Fish("salmon")
+robin = Bird("robin")
+bonobo = Chimp("bonobo")
+nycZoo.add_animals([salmon, robin, bonobo])
 
 nycZoo = Zoo("NYC Zoo")
 
